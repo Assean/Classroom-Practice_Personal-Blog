@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>我的個人部落格</title>
+    <style>
+        /* ======= 基本樣式 ======= */
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f5f5;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* ======= 導覽列 ======= */
+        nav {
+            background: #444;
+            padding: 10px 0;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* ======= 主內容區（Flex）======= */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 30px;
+            flex-wrap: wrap;
+        }
+
+        /* 文章區塊 */
+        .post {
+            background: #fff;
+            padding: 20px;
+            width: 300px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .post h2 {
+            margin-top: 0;
+        }
+
+        /* 側邊欄 */
+        .sidebar {
+            background: #fff;
+            padding: 20px;
+            width: 250px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* ======= 頁尾 ======= */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #333;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+        /* ======= 隨機 Hover 效果加入 ======= */
+        nav ul li a:hover {
+            background: #ffeb3b;
+            color: #000;
+            transform: scale(1.1);
+        }
+
+        .post:hover {
+            background: #e3f2fd;
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+        }
+
+        .sidebar:hover {
+            background: #fff3e0;
+            transform: scale(1.02);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+        }
+</style>
+</head>
+<body>
+    <header>
+        <h1>我的個人部落格</h1>
+        <p>分享生活、作品與學習紀錄</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">首頁</a></li>
+            <li><a href="#">關於我</a></li>
+            <li><a href="#">作品集</a></li>
+            <li><a href="#">聯絡我</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="post">
+            <h2>文章標題 1</h2>
+            <p>這是一段文章內容範例，你可以在此分享你的生活、學習心得或作品介紹。</p>
+        </div>
+
+        <div class="post">
+            <h2>文章標題 2</h2>
+            <p>部落格能讓你展示作品、練習寫作，並建立自己的網路形象。</p>
+        </div>
+
+        <div class="sidebar">
+            <h3>關於本站</h3>
+            <p>這裡是我的個人部落格，用來紀錄我在程式開發與生活中的點點滴滴！</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 我的部落格網站</p>
+    </footer>
+</body>
+</html>
